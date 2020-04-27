@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
-const COMPONENTS = [];
+const COMPONENTS = [
+  NavBarComponent
+];
 
 @NgModule({
-  declarations: [],
+  declarations: [COMPONENTS],
   imports: [
-    CommonModule,
-    COMPONENTS
+    CommonModule
   ],
   exports: [
     COMPONENTS
