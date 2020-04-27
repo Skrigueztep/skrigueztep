@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {CvComponent} from './pages/cv/cv.component';
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: CvComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
