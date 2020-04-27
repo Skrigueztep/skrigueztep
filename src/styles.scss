@@ -29,4 +29,8 @@ $skrigueztep-theme: mat-light-theme($skrigueztep-primary, $skrigueztep-accent, $
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 62.5% /* 1 rem = 10px */ }
+
+:root {
+  --primary: #008FFF;
+}
