@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CvRoutesModule } from './cv.routes.module';
 import { CvComponent } from './pages/cv/cv.component';
 import {ShareModule} from '../../share/share.module';
+import {MaterialModule} from '../../core/modules/material/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import {ShareModule} from '../../share/share.module';
   imports: [
     CommonModule,
     CvRoutesModule,
-    ShareModule
+    ShareModule,
+    MaterialModule
   ]
 })
 export class CvModule { }
