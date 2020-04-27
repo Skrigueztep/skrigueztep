@@ -1,1 +1,15 @@
-<p>landing works!</p>
+<main class="landing">
+  <app-nav-bar></app-nav-bar>
+  <section class="bicolor__section">
+    <div class="lading__technologies">
+      <ng-container *ngFor="let tech of technologies">
+        <mat-card matRipple class="technologies__card">
+          <div class="card__container">
+            <img class="card__image" alt="{{tech.name}}" src="{{tech.imageURL}}" >
+            <span class="card__title">{{tech.name}}</span>
+          </div>
+        </mat-card>
+      </ng-container>
+    </div>
+  </section>
+</main>
