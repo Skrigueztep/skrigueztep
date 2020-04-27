@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CvRoutingModule } from './cv-routing.module';
+import { CvRoutesModule } from './cv.routes.module';
 import { CvComponent } from './pages/cv/cv.component';
 
 
@@ -9,7 +9,7 @@ import { CvComponent } from './pages/cv/cv.component';
   declarations: [CvComponent],
   imports: [
     CommonModule,
-    CvRoutingModule
+    CvRoutesModule
   ]
 })
 export class CvModule { }
