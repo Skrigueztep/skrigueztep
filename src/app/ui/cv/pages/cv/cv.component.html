@@ -1,1 +1,65 @@
-<p>cv works!</p>
+<main class="cv">
+  <app-nav-bar class="mat-elevation-z2"></app-nav-bar>
+  <section class="container">
+    <div class="profile">
+      <div class="profile__container">
+        <img class="profile__image" alt="" src="../../../../../assets/images/skg.jpg">
+        <span class="profile__social">
+          <a class="link-icon" href="https://linkedin.com/in/skrigueztep" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a class="link-icon" href="https://github.com/Skrigueztep" target="_blank"><i class="fab fa-github-square"></i></a>
+          <a class="link-icon" href="https://twitter.com/SkrigueztepDev" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        </span>
+      </div>
+      <p class="profile__data">
+        <span><b class="font-weight--light">Name: </b>Israel Olvera</span><br>
+        <span><b class="font-weight--light">Email: </b>skrigueztep@gmail.com</span><br>
+        <span><b class="font-weight--light">Phone: </b>5611249261</span><br>
+        <span><b class="font-weight--light">Residence: </b>Edo. de Mex., Mexico</span><br>
+        <span><b class="font-weight--light">Max. Degree Studies: </b>Bachelor´s Degree</span>
+      </p>
+    </div>
+    <div class="content">
+      <article class="content-article">
+        <h2 class="article-title">Skills</h2>
+        <hr>
+        <ul class="skill-list">
+          <ng-container *ngFor="let softSkill of softSkills">
+            <li class="skill-list__item">{{ softSkill }}</li>
+          </ng-container>
+        </ul>
+        <hr>
+        <ul class="skill-list">
+          <ng-container *ngFor="let hardSkill of hardSkills">
+            <li class="skill-list__item">{{ hardSkill }}</li>
+          </ng-container>
+        </ul>
+      </article>
+      <article>
+        <h2 class="article-title">Work Experience</h2>
+        <mat-card class="job">
+          <h3 class="job-title">Trainne IT Consultant Jr - Gibitnet S.A de C.V | (October, 1,2018 – July, 1, 2019)</h3>
+          <span>
+            <h4>Tasks:</h4>
+              Support & Maintenance to software & hardware Oracle <br>
+              Support & Maintenance to Operative Systems: Oracle 11 & RedHat Enterprise Linux 6 & 7 <br>
+              Health check reports of systems
+          </span>
+        </mat-card>
+        <br>
+        <mat-card class="job">
+          <h3 class="job-title">Front-End Web Developr Jr | (August, 20, 2019 - Current)</h3>
+          <span>
+            <h4>Tasks:</h4>
+              Support to web applications <br>
+              Implement integrations <br>
+              Back-End communication (REST API) <br>
+              Views creation according mock-ups <br>
+              develop themes, plugins, widgets for wordpress <br>
+              staff trainning on web developmet
+          </span>
+        </mat-card>
+        <br>
+      </article>
+    </div>
+  </section>
+</main>
